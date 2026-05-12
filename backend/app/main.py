@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from app.routes.predict import router
+from app.routes.disease_routes import router as disease_router
+from app.routes.campaign_routes import router as campaign_router
 
 app = FastAPI(
     title="AgriSense AI Backend",
@@ -10,10 +11,11 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5174"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-app.include_router(router)
+app.include_router(disease_router)
+app.include_router(campaign_router)

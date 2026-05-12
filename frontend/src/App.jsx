@@ -1,10 +1,17 @@
-import UploadPage from "./pages/UploadPage";
+import { BrowserRouter as Router } from 'react-router-dom';
+import AppRoutes from './routes/AppRoutes';
+import Navbar from './components/common/Navbar';
 
 function App() {
   return (
-    <div className="min-h-screen bg-green-50">
-      <UploadPage />
-    </div>
+    <Router>
+      <div className="min-h-screen bg-green-50 flex flex-col">
+        <Navbar />
+        <main className="flex-grow">
+          <AppRoutes />
+        </main>
+      </div>
+    </Router>
   );
 }
 

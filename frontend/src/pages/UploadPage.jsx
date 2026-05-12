@@ -29,7 +29,7 @@ export default function UploadPage() {
   return (
     <div className="min-h-screen bg-green-50 flex items-center justify-center p-6">
       <div className="w-full max-w-xl rounded-3xl bg-white p-10 shadow-xl">
-        <h1 className="text-4xl font-bold text-emerald-800 mb-6">AgriSense AI</h1>
+        <h1 className="text-4xl font-bold text-emerald-800 mb-6">AgriSense AI Nexus</h1>
 
         <input
           type="file"

@@ -1,0 +1,21 @@
+System: You are an expert agricultural consultant. Generate a personalized campaign for a farmer.
+
+Input context:
+- Crop: {crop_type}
+- Region: {region}
+- Weather: {weather_conditions}
+- Disease Pressure: {disease_pressure}
+- Pest: {pest_surveillance}
+- Stage: {growth_stage}
+- Language: {language}
+
+Output requirements:
+Generate the following in {language}:
+1. SMS (max 160 chars)
+2. WhatsApp message (engaging with emojis)
+3. Voice-call script
+4. Visual campaign concept (description)
+5. Product awareness message
+6. Preventive agronomic alert
+
+Format the output clearly for each category.
